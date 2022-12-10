@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="traceTime.css">
-</head>
-<body>
-
-
-  <div class="navbar">
-  <a href="#home">Home</a>
-  <a href="trace.html">Trace</a>
-  <div class="dropdown">
-    <button class="dropbtn">Planets 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Mercury</a>
-      <a href="#">Venus</a>
-      <a href="#">Earth</a>
-      <a href="#">Mars</a>
-      <a href="#">Jupiter</a>
-      <a href="#">Saturn</a>
-      <a href="#">Uranus</a>
-      <a href="#">Neptune</a>
-
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="traceTime.css">
+    <script>
+      var planetName="";
+    </script>
+  </head>
+  <body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="trace.html">Trace</a>
+        <div class="dropdown">
+          <button class="dropbtn">Planets 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#" onClick="planetName = ''; planetName = 'Mercury'">Mercury</a>
+            <a href="#" onClick="planetName = ''; planetName = 'Venus'">Venus</a>
+            <a href="#" onClick="planetName = ''; planetName = 'Earth'">Earth</a>
+            <a href="#" onClick="planetName = ''; planetName = 'Mars'">Mars</a>
+            <a href="#" onClick="planetName = ''; planetName = 'Jupiter'">Jupiter</a>
+            <a href="#" onClick="planetName = ''; planetName = 'Saturn'">Saturn</a>
+            <a href="#" onClick="planetName = ''; planetName = 'Uranus'">Uranus</a>
+            <a href="#" onClick="planetName = ''; planetName = 'Neptune'">Neptune</a>
+            <a href="#" onClick="planetName = ''; planetName = 'Pluto'">Pluto</a>
+          </div>
+        </div>
+      </div> 
     </div>
-  </div> 
-</div>
-
-<h3>Trace Object Overtime</h3>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, facere! Beatae explicabo quaerat optio enim molestiae eius id, officiis vel rerum quibusdam similique exercitationem labore non unde dolore aliquam quo.</p>
-
-</body>
+    <div class="main">
+      <h3>Trace Object Overtime</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, facere! Beatae explicabo quaerat optio enim molestiae eius id, officiis vel rerum quibusdam similique exercitationem labore non unde dolore aliquam quo.</p>
+      <!-- Tried to make a box that tells you what planet is selected -->
+      <div class="planet">
+        <script>
+          planetName=""
+          document.write(planetName);
+        </script>
+      </div>
+    </div>
+  </body>
 </html>

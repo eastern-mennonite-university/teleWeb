@@ -61,5 +61,12 @@ body {
   .dropdown:hover .dropdown-content {
     display: block;
   }
-
-  
+  /*
+  .planet{
+    width: 50 px;
+    border: 3px black;
+    justify-content: left;
+    padding: 50px;
+    margin: 20px;
+  }
+  */
